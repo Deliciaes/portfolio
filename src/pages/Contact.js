@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import ContactCard from '../components/Contact';
 
 const Contact = () => {
 
     return (
         <>
-        Contact
+<ContactCard />
         </>
     )
 }

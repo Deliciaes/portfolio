@@ -28,7 +28,7 @@ font-size: 52px;
   }
 }
 
-.App-header {
+.appContent {
   background-color: #2f2433;
   min-height: 100vh;
   display: flex;
@@ -38,8 +38,3 @@ font-size: 52px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
