@@ -23,6 +23,13 @@ body{
   color: white;
 }
 
+h1{
+  font-family: 'Exo 2', sans-serif;
+ font-weight: 400;
+ font-size: 52px;
+ color: #FC50B2;
+}
+
 h2{
-  color: orange;
+  color: #FC50B2;
 }

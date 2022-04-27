@@ -10,7 +10,7 @@ const HomeCard = (props) => {
         <div className="home">
         <h1>EMMA RAMSTEDT</h1>
         <div>Full Stack Developer</div>
-        <div><Link to="/portfolio"><Button>hej</Button></Link></div>
+        <div><Link to="/portfolio"><Button></Button></Link></div>
         </div>
     )
 };
