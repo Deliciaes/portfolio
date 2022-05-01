@@ -1,23 +1,37 @@
 import React from "react";
-import './button.css';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import styled from "styled-components";
+
+const MyButton = styled.button`
+  font-size: 18px;
+  padding: 6px 20px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: max-content;
+  margin: 20px;
+  cursor: pointer;
+
+  :hover {
+    border-color: orange;
+    color: orange;
+  }
+`;
 
 const Button = (props) => {
-return (
-        <button className="button">
-          {props.buttonText}
-        </button>)
-  };
+  return <MyButton>{props.buttonText}</MyButton>;
+};
 
-// Set which props this component takes
 Button.propTypes = {
-    buttonText: PropTypes.string,
-  };
-  
-  // Set default props in case no props were passed to the component
-  Button.defaultProps = {
-    buttonText: "Portfolio",
-  };
+  buttonText: PropTypes.string,
+};
 
+Button.defaultProps = {
+  buttonText: "Portfolio",
+};
 
 export default Button;

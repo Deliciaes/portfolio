@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,700;1,300&family=Oxanium&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,700;1,300&family=Oxanium&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 
 /* font-family: 'Exo 2', sans-serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Oxanium', cursive; */
 :root {
-font-family: 'Oxanium', cursive;
-background-color:#2f2433;
-
+  font-family: "Oxanium", cursive;
+  background-color: #2e294e;
 }
 
-
-body{
+body {
   margin: 0px;
   padding: 0px;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,13 +22,17 @@ body{
   color: white;
 }
 
-h1{
-  font-family: 'Exo 2', sans-serif;
- font-weight: 400;
- font-size: 52px;
- color: #FC50B2;
+h1 {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 52px;
+  color: #fc50b2;
 }
 
-h2{
-  color: #FC50B2;
+h2 {
+  color: #fc50b2;
+}
+
+a:hover {
+  color: #fc50b2;
 }
