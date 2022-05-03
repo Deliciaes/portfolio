@@ -10,15 +10,9 @@ const Contact = styled.div`
   display: flex;
   flex-direction: row;
   color: black;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   border-radius: 2px;
-`;
-
-const Break = styled.div`
-  flex-basis: 100%;
-  width: 0;
-  text-align: center;
 `;
 
 const Socials = styled.div`
@@ -40,27 +34,33 @@ const Socials = styled.div`
   }
 `;
 
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+`;
+
 const ContactCard = (props) => {
   return (
     <Contact>
-      <div>logo</div>
-      <div>{props.name}</div>
-      <Break>
+      <Title>
         <div>
           <h2>{props.name}</h2>
+          <div>{props.role}</div>
+          <div>{props.location}</div>
         </div>
-        <div>{props.role}</div>
-        <div>{props.location}</div>
-      </Break>
+      </Title>
       <Socials>
         <div>
-          <a href={props.githubUrl} target="_blank">
-            <img src={GitHub} width="20px" /> /Deliciaes
+          <a href={props.githubUrl} target="_blank" rel="noreferrer">
+            <img src={GitHub} width="20px" alt="github icon" /> /Deliciaes
           </a>
         </div>
         <div>
-          <a href={props.linkedinUrl} target="_blank">
-            <img src={LinkedIn} width="20px" /> /in/emma.ramstedt
+          <a href={props.linkedinUrl} target="_blank" rel="noreferrer">
+            <img src={LinkedIn} width="20px" alt="linkedin icon" />{" "}
+            /in/emma.ramstedt
           </a>
         </div>
         <div>

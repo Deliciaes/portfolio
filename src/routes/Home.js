@@ -1,5 +1,4 @@
 import HomeCard from "../components/HomeCard";
-import DecoFunctionStart from "../DecoFunctionStart";
 
 const Home = () => {
   return (

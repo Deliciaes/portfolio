@@ -4,20 +4,29 @@ import styled from "styled-components";
 const Project = styled.div`
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  padding: 10px;
   border-radius: 0px 5% 0px 5%;
   margin-bottom: 20px;
+  max-width: 800px;
+  background-color: #2d173b;
+  margin-left: 1%;
+  margin-right: 1%;
+
+  img {
+    border-radius: 0px 5% 0px 0px;
+    max-width: 100%;
+  }
+`;
+
+const Content = styled.div`
+  padding: 1%;
 `;
 
 const ProjectLinks = styled.div`
   display: flex;
-  justify-content: space-around;
 
   a {
     color: orange;
+    margin-right: 2%;
   }
 
   a:hover {
@@ -33,22 +42,25 @@ const PortfolioCard = (props) => {
   return (
     <>
       <Project>
-        <h2>{props.title}</h2>
-        <ProjectLinks>
-          <a href={props.github} target="_blank">
-            GitHub
-          </a>
-          <a href={props.demo} target="_blank">
-            Demo
-          </a>
-        </ProjectLinks>
-        <div>{props.description}</div>
-        <div>
-          <p>
-            <Stack>Stack:</Stack> {props.stack}
-          </p>
-          {props.created}
-        </div>
+        <img src={props.image} alt={props.imageAlt} />
+        <Content>
+          <h2>{props.title}</h2>
+          <ProjectLinks>
+            <a href={props.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href={props.demo} target="_blank" rel="noreferrer">
+              Demo
+            </a>
+          </ProjectLinks>
+          <div>{props.description}</div>
+          <div>
+            <p>
+              <Stack>Stack:</Stack> {props.stack}
+            </p>
+            {props.created}
+          </div>
+        </Content>
       </Project>
     </>
   );
